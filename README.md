@@ -1,2 +1,2 @@
 # Ninja-Run
-Simple 2D endless runner game.
+Simple, 2D endless runner game.
