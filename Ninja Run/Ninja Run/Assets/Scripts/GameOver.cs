@@ -24,7 +24,7 @@ public class GameOver : MonoBehaviour
 
     }
 
-    public void ExitButton() //Change this when you make a scene with a start menu
+    public void ExitButton() 
     {
         SceneManager.LoadScene("Start Screen");
     }
