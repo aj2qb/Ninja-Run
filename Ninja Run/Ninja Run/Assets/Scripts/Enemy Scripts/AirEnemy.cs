@@ -79,8 +79,7 @@ public class AirEnemy : MonoBehaviour
     }
 
     void Start()
-    {
-        //ninja.AddComponent<NinjaController>();         
+    { 
         airEnemyPosition = new Vector3(6f, -3.84f, 0);
         airRandSpawn = Random.Range(2, 5);
         InvokeRepeating("createEnemy", airRandSpawn, 7);
