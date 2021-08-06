@@ -81,7 +81,7 @@ public class FireEnemy : MonoBehaviour
 
     void Start()
     {
-        //ninja.AddComponent<NinjaController>();         
+             
         fireEnemyPosition = new Vector3(6f, -3.84f, 0);
         fireRandSpawn = Random.Range(2, 5);
         InvokeRepeating("createEnemy", fireRandSpawn, 8);

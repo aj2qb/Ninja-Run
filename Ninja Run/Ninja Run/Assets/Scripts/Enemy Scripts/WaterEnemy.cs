@@ -79,8 +79,7 @@ public class WaterEnemy : MonoBehaviour
     }
 
     void Start()
-    {
-        //ninja.AddComponent<NinjaController>();         
+    {     
         waterEnemyPosition = new Vector3(6f, -3.84f, 0);
         waterRandSpawn = Random.Range(2, 5);
         InvokeRepeating("createEnemy", waterRandSpawn, 7);

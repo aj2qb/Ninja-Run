@@ -79,7 +79,7 @@ public class EarthEnemy : MonoBehaviour
 
     void Start()
     {
-        //ninja.AddComponent<NinjaController>();         
+              
         earthEnemyPosition = new Vector3(6f, -3.84f, 0);
         earthRandSpawn = Random.Range(2, 5);
         InvokeRepeating("createEnemy", earthRandSpawn, 7);
