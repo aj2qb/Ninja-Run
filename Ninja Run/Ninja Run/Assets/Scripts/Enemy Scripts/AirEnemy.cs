@@ -41,7 +41,7 @@ public class AirEnemy : MonoBehaviour
 
         if(collision.gameObject.tag == "Water Enemy" || collision.gameObject.tag == "Earth Enemy" || collision.gameObject.tag == "Fire Enemy")
         {
-            this.gameObject.transform.position += new Vector3(5, 0); 
+            this.gameObject.transform.position = new Vector3(8, -3.5f); 
         }
     }
 
@@ -79,7 +79,7 @@ public class AirEnemy : MonoBehaviour
     }
 
     void Start()
-    { 
+    {
         airEnemyPosition = new Vector3(6f, -3.84f, 0);
         airRandSpawn = Random.Range(2, 5);
         InvokeRepeating("createEnemy", airRandSpawn, 7);

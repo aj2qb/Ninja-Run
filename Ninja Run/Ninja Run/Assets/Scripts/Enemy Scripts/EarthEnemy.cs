@@ -42,7 +42,7 @@ public class EarthEnemy : MonoBehaviour
 
         if (collision.gameObject.tag == "Water Enemy" || collision.gameObject.tag == "Air Enemy" || collision.gameObject.tag == "Fire Enemy")
         {
-            this.gameObject.transform.position += new Vector3(7, 0);
+            this.gameObject.transform.position = new Vector3(12, -2f);
         }
     }
 
@@ -79,7 +79,6 @@ public class EarthEnemy : MonoBehaviour
 
     void Start()
     {
-              
         earthEnemyPosition = new Vector3(6f, -3.84f, 0);
         earthRandSpawn = Random.Range(2, 5);
         InvokeRepeating("createEnemy", earthRandSpawn, 7);

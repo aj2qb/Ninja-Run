@@ -21,7 +21,7 @@ public class ThrowScript : MonoBehaviour
 
     void createThrow()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && !ninja.GetComponent<NinjaController>().gameOver)
         {
             print("AIR");
             Rigidbody2D air1 = Instantiate(air, startPosition, Quaternion.identity);
@@ -29,11 +29,11 @@ public class ThrowScript : MonoBehaviour
             ninja.GetComponent<NinjaController>().score -= 25; 
             if (air1 != null)
             {
-                Destroy(air1.gameObject, 5);
+                Destroy(air1.gameObject, 3.15f);
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && !ninja.GetComponent<NinjaController>().gameOver)
         {
             print("WATER");
             Rigidbody2D water1 = Instantiate(water, startPosition, Quaternion.identity);
@@ -41,11 +41,11 @@ public class ThrowScript : MonoBehaviour
             ninja.GetComponent<NinjaController>().score -= 25;
             if (water1 != null)
             {
-                Destroy(water1.gameObject, 5);
+                Destroy(water1.gameObject, 3.15f);
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && !ninja.GetComponent<NinjaController>().gameOver)
         {
             print("EARTH");
             Rigidbody2D earth1 = Instantiate(earth, startPosition, Quaternion.identity);
@@ -53,12 +53,12 @@ public class ThrowScript : MonoBehaviour
             ninja.GetComponent<NinjaController>().score -= 25;
             if (earth1 != null)
             {
-                Destroy(earth1.gameObject, 5);
+                Destroy(earth1.gameObject, 3.15f);
 
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) && !ninja.GetComponent<NinjaController>().gameOver)
         {
             print("FIRE");
             Rigidbody2D fire1 = Instantiate(fire, startPosition, Quaternion.identity);
@@ -67,7 +67,7 @@ public class ThrowScript : MonoBehaviour
 
             if (fire1)
             {
-                Destroy(fire1.gameObject, 5);
+                Destroy(fire1.gameObject, 3.15f);
 
             }
 

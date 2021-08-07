@@ -18,7 +18,7 @@ public class LevelController : MonoBehaviour
     {
         //print("In level controller: " + _foodScore._score); 
         ninja.SetActive(false); 
-        gameOver.Setup(_finalScore); 
+        gameOver.Setup(_finalScore); // change this to increment score instead of 0
     }
 
     public void StartMenu()
